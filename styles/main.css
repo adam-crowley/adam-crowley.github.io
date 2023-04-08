@@ -259,6 +259,7 @@
 }
 .nav__article-list li {
   font-size: 0.75rem; /* 12px */
+  margin-bottom: 0.5em;
 }
 @media (min-width: 576px) {
   .nav__article-list li {
@@ -283,6 +284,7 @@
 .main__article-date {
   color: #fff;
   font-size: 0.75rem; /* 12px */
+  text-transform: uppercase;
 }
 @media (min-width: 576px) {
   .main__article-date {

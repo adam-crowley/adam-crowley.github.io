@@ -241,15 +241,16 @@
   max-width: 700px;
   text-align: center;
 }
+.page__intro p:last-child {
+  margin-bottom: 0;
+}
 .page__intro img {
   display: block;
   width: 70px;
   height: auto;
   margin: 0 auto;
 }
-.page__intro p:last-child {
-  margin-bottom: 0;
-}
+
 
 /* ==========================================================================
 	 Navigation

@@ -25,7 +25,7 @@
           <div class="nav__group">
             <h4 class="nav__h4">Sprint 2</h4>
             <ul class="nav__article-list">
-              <li><a href="/blog/html-css.html">What are the differences between relative, absolute, and fixed positioning?</a></li>
+              <li><a href="/blog/html-css.html">Relative, absolute, and fixed positioning</a></li>
               <li><a href="/blog/identity-values.html">Identity and values</a></li>
               <li><a href="/blog/learning-plan.html">Learning plan</a></li>
             </ul>
@@ -54,18 +54,36 @@
               All webpage layouts are built using common elements that all have a rectangular shape.
               Positioning in CSS is concerned with the position of these rectangular elements within the natural flow of the document. These rectangular elements are either displayed vertically (known as block display) or horizontally (known as inline display).
             </p>
-            <h3>Relative positioning</h3>
-            <p class="clearfix">
-              <img class="main__article-img" src="../img/relative.png" alt="relative postion">Relative positioning is where an elements position is 'relative' to itself. Applying relative position to an element means that you can shift the element left, right, up and down away from it's static position. But the element's place in the original document flow is still held.
-            </p>
-            <h3>Absolute positioning</h3>
-            <p class="clearfix">
-              <img class="main__article-img" src="../img/absolute.png" alt="absolute position">Absolute postioning is where an element is removed from the document flow. When absolute position is applied to an element is can be positioned absolutely anywhere within a relatively positioned container, without affecting the position of other elements in that container.
-            </p>
-            <h3>Fixed positioning</h3>
-            <p class="clearfix">
-              <img class="main__article-img" src="../img/fixed.png" alt="fixed position">Fixed positioning is where an element is positioned relative to the browser window. So when an element has a fixed position to the top, it will stay at the top of the browser window, even when a user has scrolled to the bottom of a web page.
-            </p>
+            <div class="clearfix">
+              <h3>Relative positioning</h3>
+              <figure class="main__article-figure">
+                <img class="main__article-img" src="../img/relative.png" alt="relative postion">
+                <figcaption>Relative position</figcaption>
+              </figure>
+              <p>
+                Relative positioning is where an elements position is 'relative' to itself. Applying relative position to an element means that you can shift the element left, right, up and down away from it's static position. But the element's place in the original document flow is still held.
+              </p>
+            </div>
+            <div class="clearfix">
+              <h3>Absolute positioning</h3>
+              <figure class="main__article-figure">
+                <img class="main__article-img" src="../img/absolute.png" alt="absolute position">
+                <figcaption>Absolute position</figcaption>
+              </figure>
+              <p>
+                Absolute postioning is where an element is removed from the document flow. When absolute position is applied to an element is can be positioned absolutely anywhere within a relatively positioned container, without affecting the position of other elements in that container.
+              </p>
+            </div>
+            <div class="clearfix">
+              <h3>Fixed positioning</h3>
+              <figure class="main__article-figure">
+                <img class="main__article-img" src="../img/fixed.png" alt="fixed position">
+                <figcaption>Fixed position</figcaption>
+              </figure>
+              <p class="clearfix">
+                Fixed positioning is where an element is positioned relative to the browser window. So when an element has a fixed position to the top, it will stay at the top of the browser window, even when a user has scrolled to the bottom of a web page.
+              </p>
+            </div>
           </article>
         </main>
       </div>

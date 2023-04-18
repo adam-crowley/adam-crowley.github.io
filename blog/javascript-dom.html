@@ -25,7 +25,7 @@
           <div class="nav__group">
             <h4 class="nav__h4">Sprint 2</h4>
             <ul class="nav__article-list">
-              <li><a href="/blog/html-css.html">What are the differences between relative, absolute, and fixed positioning?</a></li>
+              <li><a href="/blog/html-css.html">Relative, absolute, and fixed positioning</a></li>
               <li><a href="/blog/identity-values.html">Identity and values</a></li>
               <li><a href="/blog/learning-plan.html">Learning plan</a></li>
             </ul>
@@ -50,24 +50,82 @@
             <p class="main__article-date">16 April 2023</p>
             <hr>
             <h3>JavaScript and its relationship to HTML and CSS</h3>
-            <p>
-            HTML is like a printed page of a book with just the story. CSS adds unique color, typographical style and layout to the page. JavaScript makes the story able to be interacted with like a popup picture book.
-            </p>
+            <p>HTML is like a printed page of a book with just the story. CSS adds unique color, typographical style and layout to the page. JavaScript makes the story able to be interacted with like a popup picture book.</p>
             <h3>Control flow and loops</h3>
             <p>Control flow describes the way that the computer reads code. Generally it will start reading from the top of a code document and continue down until it reaches the bottom. The control flow is broken up by loops, and when it enters a loop it goes around a set number of times, before returning to a linear flow. This could be thought of like a car journey where you travel straight down a road. Stopping at a traffic light would be a loop, whereby a set of number of lights will change before you get a green light and continue your journey.</p>
-            <h3>What is the DOM?</h3>
-            <p>The DOM is a web browser's interpretation of an HTML document, and it has a tree-like structure that's made up of 'nodes'. An HTML document is static and not able to be modified. The DOM starts out exactly like the HTML document, but it's dynamic, and can be modified by Javascript. For example a section of the page might start off at the top, but Javascript can pull this section out of the DOM, change the content, and place the section elsewhere on the page.</p>
+            <figure>
+              <pre>
+                <code>let trafficLights = ['red', 'green', 'orange']
+
+// Loop that displays the color of each traffic light
+for (let i = 0; i < trafficLights.length; i++) {
+  console.log(trafficLights[i])
+}
+
+// Output is 'red', 'green', 'orange'
+</code>
+              </pre>
+              <figcaption>A loop that displays colors of a traffic light array</figcaption>
+            </figure>
+            <div class="clearfix">
+              <h3>What is the DOM?</h3>
+              <figure class="main__article-figure">
+                <img class="main__article-img" src="../img/DOM-model.svg.png" alt="DOM">
+                <figcaption>The DOM tree</figcaption>
+              </figure>
+              <p>
+                The DOM is a web browser's interpretation of an HTML document, and it has a tree-like structure that's made up of 'nodes'. An HTML document is static and not able to be modified. The DOM starts out exactly like the HTML document, but it's dynamic, and can be modified by Javascript. For example a section of the page might start off at the top, but Javascript can pull this section out of the DOM, change the content, and place the section elsewhere on the page.
+              </p>
+            </div>
             <h3>Accessing data from arrays and objects</h3>
-            <p>Accessing data from an arrays and objects differ in terms of the syntax used. Object properties are accessed mainly by using dot notation and the name of the property (eg cat.breed = 'pallas cat'). Array items are accessed by using bracket notation and the numbered postion of that item in the array (eg cats[6] = 'pallas cat').</p>
+            <p>Accessing data from an arrays and objects differ in terms of the syntax used.</p>
+            <p>Object properties are accessed mainly by using dot notation and the name of the property.</p>
+            <figure>
+              <pre>
+                <code>// Object
+let cat = {breed: 'pallas cat', shape: 'round', mood: 'grumpy'}
+
+console.log(cat.breed)
+// Output is 'pallas cat'
+</code>
+              </pre>
+              <figcaption>Accessing data from an object</figcaption>
+            </figure>
+            <p>Array items are accessed by using bracket notation and the numbered postion of that item in the array.</p>
+            <figure>
+              <pre>
+                <code>// Array
+let cats = ['tortoise shell', 'scottish fold', 'pallas cat', 'brindle']
+
+console.log(cats[2])
+// Output is 'pallas cat'
+</code>
+              </pre>
+              <figcaption>Accessing data from an array</figcaption>
+            </figure>
             <h3>What are functions are and why are they helpful?</h3>
             <p>A function is a reusable section of code that has a specific action. Because there are a lot of repeating actions in an application, rather than write those multiple lines of code each time, they can just live inside a function and be called whenever needed. This minimises that amount of code that needs to be written, and keeps it clean and easily readable.</p>
+            <figure>
+              <pre>
+                <code>let trafficLights = ['red', 'green', 'orange']
+
+// Function that displays the color of each traffic light
+function displayTrafficLights(names) {
+  for (let i = 0; i < names.length; i++) {
+    console.log(names[i])
+  }
+}
+
+displayTrafficLights(trafficLights)
+// Output is 'red', 'green', 'orange'
+</code>
+              </pre>
+              <figcaption>A function that displays colors of a traffic light array</figcaption>
+            </figure>
           </article>
         </main>
       </div>
     </div>
-    
-    
-    <!-- this is a comment. -->
   
   </body>
 </html>
